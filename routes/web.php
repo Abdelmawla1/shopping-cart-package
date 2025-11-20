@@ -9,4 +9,4 @@ Route::get('/', function () {
 
 Route::get('shop', [CartController::class,'shop'])->name('shop');
 Route::get('cart', [CartController::class,'cart'])->name('cart');
-Route::get('add-to-cart', [CartController::class,'addToCart'])->name('add-to-cart');
+Route::get('add-to-cart/{product_id}', [CartController::class,'addToCart'])->name('add-to-cart');

@@ -13,7 +13,7 @@
                                     <h1 class="card-title" style="font-size: 20px;">{{ $product->name }}</h1>
                                     <h1 class="card-title" style="font-size: 20px;">{{ $product->price }}</h1>
                                     <p class="card-text">{{ $product->description }}</p>
-                                    <a href="#" class="btn btn-success mt-3">Add To Cart</a>
+                                    <a href="{{ route('add-to-cart', $product->id) }}" class="btn btn-success mt-3">Add To Cart</a>
                                 </div>
                             </div>
                         </div>
